@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='com.kdmanalytics.toif.pmd' version='2.3.1'>
+    <update id='com.kdmanalytics.toif.pmd' range='[0.0.0,2.3.1)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Open TOIF Findbugs'/>
+      <property name='org.eclipse.equinox.p2.provider' value='KDM Analytics Inc.'/>
+      <property name='maven-groupId' value='com.kdmanalytics.toif.compile'/>
+      <property name='maven-artifactId' value='com.kdmanalytics.toif.pmd'/>
+      <property name='maven-version' value='2.3.1'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='com.kdmanalytics.toif.pmd' version='2.3.1'/>
+      <provided namespace='osgi.bundle' name='com.kdmanalytics.toif.pmd' version='2.3.1'/>
+      <provided namespace='java.package' name='com.kdmanalytics.toif.adaptor' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='6'>
+      <required namespace='osgi.bundle' name='org.slf4j.api' range='1.7.2'/>
+      <required namespace='osgi.bundle' name='org.apache.xerces' range='[2.11.0,3.0.0)'/>
+      <required namespace='osgi.bundle' name='org.apache.commons.io' range='2.4.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='com.kdmanalytics.toif.framework' range='[2.1.0,3.0.0)'/>
+      <required namespace='osgi.bundle' name='com.kdmanalytics.toif.common' range='2.1.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='com.kdmanalytics.toif.pmd' version='2.3.1'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: com.kdmanalytics.toif.pmd;singleton:=true&#xA;Bundle-Version: 2.3.1&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

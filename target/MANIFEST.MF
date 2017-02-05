@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.kdmanalytics.toif.pmd;singleton:=true
+Export-Package: com.kdmanalytics.toif.adaptor
+Bundle-Name: Open TOIF Findbugs
+Bundle-Version: 2.3.1
+Require-Bundle: org.slf4j.api;bundle-version="1.7.2",org.apache.xerces
+ ;bundle-version="[2.11.0,3.0.0)",org.apache.commons.io;bundle-version
+ ="2.4.0",org.eclipse.core.runtime,com.kdmanalytics.toif.framework;bun
+ dle-version="[2.1.0,3.0.0)",com.kdmanalytics.toif.common;bundle-versi
+ on="2.1.0"
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.kdmanalytics.toif.pmd.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: KDM Analytics Inc.
+
